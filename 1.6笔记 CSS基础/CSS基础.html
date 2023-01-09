@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="text-overflow">this is text yes i do</p>
+    <div class="-webkit-line-clamp">
+        <p>this is text yes i do</p>
+    </div>
+</body>
+<style>
+    .text-overflow {
+        width: 60px;
+        /* text-align: center; */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .-webkit-line-clamp {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .-webkit-line-clamp p {
+        width: 60px;
+    }
+</style>
+
+</html>
